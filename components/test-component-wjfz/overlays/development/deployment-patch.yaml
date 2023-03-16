@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-wjfz
+  namespace: build-e2e-jtij-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:b56f41d37e1fb6c4d085265dc8017e702a51ce162141f61b8c8366ced0236bc5
+        name: my-python
+        resources: {}
+status: {}
